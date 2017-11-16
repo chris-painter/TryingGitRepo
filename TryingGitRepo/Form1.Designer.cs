@@ -1,6 +1,6 @@
 ﻿namespace TryingGitRepo
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(556, 246);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(422, 38);
+            this.txtName.TabIndex = 0;
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(428, 249);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(90, 32);
+            this.lblName.TabIndex = 1;
+            this.lblName.Text = "Name";
+            // 
+            // frmMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(1290, 929);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.txtName);
+            this.Name = "frmMain";
+            this.Text = "Name";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label lblName;
     }
 }
 
