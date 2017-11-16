@@ -30,6 +30,7 @@
         {
             this.txtName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
+            this.btnGo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtName
@@ -48,11 +49,22 @@
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Name";
             // 
+            // btnGo
+            // 
+            this.btnGo.Location = new System.Drawing.Point(739, 364);
+            this.btnGo.Name = "btnGo";
+            this.btnGo.Size = new System.Drawing.Size(180, 91);
+            this.btnGo.TabIndex = 2;
+            this.btnGo.Text = "Go";
+            this.btnGo.UseVisualStyleBackColor = true;
+            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1290, 929);
+            this.Controls.Add(this.btnGo);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.txtName);
             this.Name = "frmMain";
@@ -66,6 +78,7 @@
 
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Button btnGo;
     }
 }
 

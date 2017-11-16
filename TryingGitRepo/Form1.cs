@@ -16,5 +16,10 @@ namespace TryingGitRepo
         {
             InitializeComponent();
         }
+
+        private void btnGo_Click(object sender, EventArgs e)
+        {
+            lblName.Text = txtName.Text;
+        }
     }
 }
